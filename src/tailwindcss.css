@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-3xl;
+    }
+    h2 {
+        @apply text-2xl;
+    }
+    h3 {
+        @apply text-xl;
+        }
+    h4 {
+        @apply text-lg;
+        }
+    h5 {
+        @apply text-base;
+    }
+    h6 {
+        @apply text-sm;
+    }
+}
+
+input:focus{
+    outline: none;
+}
+
+.pi {
+    font-size: 0.75rem !important;
+}
+
+.deep-shadow {
+    box-shadow: 2px 2px 4px 0 rgb(48 48 83 / 50%);
+}
+
+.weak-shadow {
+    box-shadow: 2px 2px 2px 0 rgb(48 48 83 / 40%);
+}
+
+/* background-color: rgba(82, 103, 139, var(--tw-bg-opacity)); */
+.nav-shadow {
+    box-shadow: 0 2px 8px 0 rgb(48 48 83 / 50%);
+}
+
+.nv-btn {
+    display: inline-block;
+    cursor: pointer;
+
+    color: #ffffff;
+    background: #4F46E5;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+
+.nv-btn:active {
+    box-shadow: 2px 2px 4px 0 rgb(48 48 83 / 50%);
+    transform: translateY(1px);
+}
+
+.nv-w-3\/13 {
+    width: 23%;
+}
+
+.nv-w-3\/13 {
+    width: 23%;
+}
+
+.nv-h-9\/10 {
+    height: 90%;
+}
+
+.h-15\/16 {
+    height: 96%;
+}
+
+.max-h-152 {
+    max-height: 40rem;
+}
+
+.nv-btn-sm {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.4rem;
+}
+
+.nv-purple {
+    color: #4F46E5
+}
+
+.nv-bg-purple {
+    background-color: #4F46E5
+}
+
+.hover\:nv-purple:hover {
+    color: #35309d
+}
+
+.hover\:nv-bg-purple:hover {
+    background-color: #4039bb
+}
