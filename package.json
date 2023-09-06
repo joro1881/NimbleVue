@@ -1,6 +1,6 @@
 {
   "name": "nimble-vue-components",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "description": "## Project setup ``` npm install ```",
   "author": "Georgi Yankov",
@@ -14,6 +14,7 @@
     "test": "vue-cli-service test:unit --no-cache"
   },
   "main": "dist/nimble-vue-components.common.js",
+  "types": "dist/nimble-vue-components.d.ts",
   "module": "dist/nimble-vue-components.umd.min.js",
   "files": [
     "dist"

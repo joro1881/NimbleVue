@@ -8,8 +8,8 @@
             :class="headerClass ? headerClass : ` flex items-center ${!noTileTrigger ? 'cursor-pointer' : ''}`"            
         >
             <span v-if="!noIcon" @click="onIconClick" id="icon" class="mr-2 ml-0.5 cursor-pointer">
-                <span v-if="!body"><i :class="`${expandIcon}`" /></span>
-                <span v-else><i :class="`${collapseIcon}`" /></span>                
+                <span v-if="!body"><box-icon :name="expandIcon" :size="iconSize" :color="iconColor" /></span>
+                <span v-else><box-icon :name="collapseIcon" :size="iconSize" :color="iconColor" /></span>                
             </span>
             <div :class="headerStyle" @click="onTileClick">
                 <slot name="header">
@@ -40,9 +40,14 @@
     </div>
 </template>
 <script>
+import BoxIcon from '@/icons/BoxIcon.vue';
+
 export default {
     name: 'NvExpandTile',
     emits: ['tile-close', 'tile-open'],
+    components: {
+        BoxIcon,
+    },
     props: {
         title: {
             type: String,
@@ -87,6 +92,8 @@ export default {
             type: String,
             default: 'chevron-right'
         },
+        iconSize,
+        iconColor,
         noIcon: {
             type: Boolean,
             default: false
