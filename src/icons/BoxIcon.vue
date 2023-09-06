@@ -1,5 +1,5 @@
 <template>
-  <i :class="iconClass" :style="{ fontSize: size, color: color }"></i>
+  <i :class="iconClass" :style="{ 'font-size': size, color: color }"></i>
 </template>
 
 <script>
@@ -8,11 +8,11 @@ export default {
     name: String,
     size: {
       type: String,
-      default: '24px'
+      default: '20px'
     },
     color: {
       type: String,
-      default: 'currentColor'
+      default: ''
     }
   },
   computed: {

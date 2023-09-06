@@ -7,9 +7,9 @@
         <div id="tile-header" 
             :class="headerClass ? headerClass : ` flex items-center ${!noTileTrigger ? 'cursor-pointer' : ''}`"            
         >
-            <span v-if="!noIcon" @click="onIconClick" id="icon" class="mr-2 ml-0.5 cursor-pointer">
-                <span v-if="!body"><box-icon :name="expandIcon" :size="iconSize" :color="iconColor" /></span>
-                <span v-else><box-icon :name="collapseIcon" :size="iconSize" :color="iconColor" /></span>                
+            <span v-if="!noIcon" @click="onIconClick" id="icon" class="mr-2 ml-0.5 cursor-pointer flex items-center">
+                <box-icon v-if="!body" :name="expandIcon" :size="iconSize" :color="iconColor" />
+                <box-icon v-else :name="collapseIcon" :size="iconSize" :color="iconColor" />                
             </span>
             <div :class="headerStyle" @click="onTileClick">
                 <slot name="header">
@@ -92,8 +92,8 @@ export default {
             type: String,
             default: 'chevron-right'
         },
-        iconSize,
-        iconColor,
+        iconSize: { default: '' },
+        iconColor: { default: '' },
         noIcon: {
             type: Boolean,
             default: false
