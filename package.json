@@ -1,6 +1,6 @@
 {
   "name": "nimble-vue-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "## Project setup ``` npm install ```",
   "author": "Georgi Yankov",
@@ -23,6 +23,8 @@
     "boxicons": "^2.1.4",
     "core-js": "^3.8.3",
     "postcss-cli": "^10.1.0",
+    "quill": "^1.3.7",
+    "vuex": "^4.0.2",
     "vue": "^3.2.23"
   },
   "devDependencies": {

@@ -1,15 +1,18 @@
 /*
-    Component / function - shows content under one bar, it has three sections - header, content and bar. 
+Component / function - shows content under one bar, it has three sections -
+header, content and bar.
+
     All three will be customizable via slots or props.
 */
 <template>
     <div class="w-full items-center rounded-md deep-shadow component border border-solid">
-        <div id="tile-header" 
-            :class="headerClass ? headerClass : ` flex items-center ${!noTileTrigger ? 'cursor-pointer' : ''}`"            
+        <div id="tile-header"
+            :class="headerClass ? headerClass : ` flex items-center ${!noTileTrigger ? 'cursor-pointer' : ''}`"
         >
             <span v-if="!noIcon" @click="onIconClick" id="icon" class="mr-2 ml-0.5 cursor-pointer flex items-center">
                 <box-icon v-if="!body" :name="expandIcon" :size="iconSize" :color="iconColor" />
-                <box-icon v-else :name="collapseIcon" :size="iconSize" :color="iconColor" />                
+<box-icon v-else :name="collapseIcon" :size="iconSize" :color="iconColor" />
+
             </span>
             <div :class="headerStyle" @click="onTileClick">
                 <slot name="header">
@@ -40,7 +43,8 @@
     </div>
 </template>
 <script>
-import BoxIcon from '@/icons/BoxIcon.vue';
+import BoxIcon from '../../icons/BoxIcon.vue';
+
 
 export default {
     name: 'NvExpandTile',
@@ -63,7 +67,8 @@ export default {
         },
         footer: {
             default: false,
-        },        
+},
+
         headerClass: {
             type: String,
             default: ''
