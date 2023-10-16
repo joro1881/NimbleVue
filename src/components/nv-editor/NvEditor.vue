@@ -94,7 +94,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style>
 .ql-editor {
   padding: 8px;
 }

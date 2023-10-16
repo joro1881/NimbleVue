@@ -148,7 +148,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .bubble-mode {
   border-radius: 50px !important;
 }
