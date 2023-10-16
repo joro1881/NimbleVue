@@ -155,7 +155,7 @@ export default {
 
 .slide-fade-enter-active {
   transition: all 0.1s ease-out;
-}s
+}
 
 .slide-fade-leave-active {
   transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
