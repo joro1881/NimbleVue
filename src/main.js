@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import './tailwindcss.css'
 import App from './App.vue'
+import components from './index.js';
 
 const app = createApp(App);
-app.config.compilerOptions.isCustomElement = (tag) =>
-  tag.startsWith("box-icon");
-app.config.compilerOptions.isCustomElement = (tag) => tag.startsWith("nv-btn");
+
+app.use(components);
 
 app.mount("#app");
 
