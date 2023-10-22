@@ -142,7 +142,6 @@ export default {
     },
     close() {
       this.$emit("close");
-      this.$store.commit("CLEAR_NOTICE");
     },
   },
 };

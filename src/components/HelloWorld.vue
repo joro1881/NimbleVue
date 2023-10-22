@@ -3,25 +3,25 @@
     <h1>{{ msg }}</h1>
 
     <h3>LoadingBar</h3>
-    <LoadingBar/>
+    <nv-loading-bar/>
     
     <h3>Nv button</h3>
       <div class="px-1">
-          <NvBtn
+          <nv-btn
               size="lg"
               hover
-              loading
               @click="toggleModal"
-          > opaaa </NvBtn>
+          > opaaa </nv-btn>
       </div>
 
     <h3>Notification box</h3>
-      <notice-box 
+      <nv-notice-box 
         :life="loadingTime"
         bubble
         @close="closeNotice"
         closable
-        level="warning"
+        icon="x-circle"
+        level="info"
         value="edno suobshtenie"
         position-corner="bottom-left"
       />
@@ -73,17 +73,21 @@ export default {
   },
   data() {
       return {
-          loadingTime: 10000,
+          loadingTime: 1000000,
           modalShow: false,
           editorContent: '',
           placeholderText: 'text goes here',
           submit: false,
+          toggleShow: false,
       };
   },
   methods: {
     closeNotice() {
       this.loadingTime = 0;
     },
+    toggleModal() {
+      this.toggleShow = !this.toggleShow;
+    }
   },
 }
 </script>

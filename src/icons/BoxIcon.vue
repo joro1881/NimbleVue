@@ -14,7 +14,10 @@ export default {
       type: String,
       default: ''
     },
-    type: String
+    type: {
+      type: String,
+      default: ''
+    },
   },
   computed: {
     iconClass() {
