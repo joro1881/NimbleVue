@@ -11,7 +11,7 @@
               size="lg"
               hover
               @click="toggleModal"
-          > opaaa </nv-btn>
+          > click me </nv-btn>
       </div>
 
     <h3>Notification box</h3>
@@ -27,10 +27,19 @@
       />
 
     <h3>Rich Text Editor</h3>
-      <NvEditor 
+      <nv-editor 
         v-model:content="editorContent"
         :placeholder="placeholderText"
         hideOptions
+        identifier="nv-1"
+        :submitted="submit"
+      />
+      <h4>Second instance</h4>
+       <nv-editor 
+        v-model:content="editorContent"
+        :placeholder="placeholderText"
+        hideOptions
+        identifier="nv-2"
         :submitted="submit"
       />
 
