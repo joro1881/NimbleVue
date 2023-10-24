@@ -57,12 +57,8 @@ Note: You can import styles directly to main css if your project css file is pro
 ```@import "~nimble-vue-components/dist/nimble-vue-components.css";```<br><br>
 
 
-**Initial lib documentation**
-- how to set in project 
-<br><br>
-
-### Components
-- **Button**
+## Components
+### Button
     - Purpose:
         This is a versatile button component that can be customized for various purposes. It allows users to create buttons with different styles, sizes, icons, and behavior.
     - Events - mouseenter, mouseleave
@@ -104,7 +100,7 @@ Note: You can import styles directly to main css if your project css file is pro
         />
         ```
     <br>
-- **Rich Tech Editor**
+### Rich Tech Editor
     - Purpose:
         This component provides an editor for rich text content using Quill.js. It includes a toolbar for formatting options.
     - Events - hide, focusin
@@ -133,7 +129,7 @@ Note: You can import styles directly to main css if your project css file is pro
         />
         ```
     <br>
-- **Expanding Tile**
+### Expanding Tile
     - Purpose:
         The nv-expand-tile component is a customizable container that displays content under a single bar. It consists of three sections: header, content, and a collapsible bar. These sections can be customized using slots or props.
 
@@ -176,7 +172,7 @@ Note: You can import styles directly to main css if your project css file is pro
         </nv-expand-tile>
         ```
         <br>
-- **Loading bar**
+### Loading bar
     - Purpose:
         The nv-loading-bar component is used to display a loading bar, which can be either indeterminate (animated) or determinate (showing progress). It provides flexibility in customizing the appearance of the loading bar.
 
@@ -196,7 +192,7 @@ Note: You can import styles directly to main css if your project css file is pro
         <nv-loading-bar mode="determinate" :value="50" :denominator="100" height="0.3rem" color="#0077cc" background="#add8e6" />
         ```
     <br>
-- **Modal Panel**
+### Modal Panel
     - Purpose:
         The nv-modal-panel component is a flexible modal dialog that can be used to display content on top of other content. It provides a modal container with customizable header, content, and footer sections. The modal can be shown or hidden based on the 'isOpen' prop.
 
@@ -234,7 +230,7 @@ Note: You can import styles directly to main css if your project css file is pro
         </nv-modal-panel>
         ```
         <br>
-- **Notice box**
+### Notice box
     - Purpose:
         The nv-notice-message component is used to display temporary notification messages to users. It can show messages of different levels (success, info, warning, error) with customizable appearance and an optional close button. The message is automatically dismissed after a specified time.
 
