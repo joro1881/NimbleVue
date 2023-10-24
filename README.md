@@ -10,8 +10,7 @@ and styling. Complexity that is necessary only in rare cases.
 Main goal is to be nimble, be used in small projects on the fly, as alternative to the big and stuffed libraries.
 
 The inspiration came from a bad experience with one of the famous vue library, when I had to manually override 
-styling classes in order to use the library in small startup project. 
-<br><br>
+styling classes in order to use the library in small startup project.
 
 ## Table of Contents
 
@@ -31,11 +30,11 @@ styling classes in order to use the library in small startup project.
 ### Project setup
 Install
 
-```npm install nimble-vue-components```<br><br>
+```npm install nimble-vue-components```<br>
 
 Import library in config file - app/main.js
 
-```import NimbleVueComponents from 'nimble-vue-components';```<br><br>
+```import NimbleVueComponents from 'nimble-vue-components';```<br>
 
 Import library styles and icons for vue project
 
@@ -43,17 +42,17 @@ Import library styles and icons for vue project
 
 ```import 'nimble-vue-components/dist/nimble-vue-components.css';```
 
-```import 'boxicons/css/boxicons.min.css';```<br><br>
+```import 'boxicons/css/boxicons.min.css';```<br>
 
 Use it with vue instance
 
-```app.use(NimbleVueComponents);```<br><br>
+```app.use(NimbleVueComponents);```<br>
 
 Note: You can import styles directly to main css if your project css file is project wide and working with other tools.
 
 ```@import "~nimble-vue-components/dist/styles.css";```
 
-```@import "~nimble-vue-components/dist/nimble-vue-components.css";```<br><br>
+```@import "~nimble-vue-components/dist/nimble-vue-components.css";```<br>
 
 
 ## Components
@@ -98,7 +97,7 @@ Note: You can import styles directly to main css if your project css file is pro
         @click="handleButtonClick"
     />
     ```
-<br>
+
 
 ### Rich Tech Editor
 - Purpose:
@@ -128,7 +127,7 @@ Note: You can import styles directly to main css if your project css file is pro
     @update:content="handleContentUpdate"
     />
     ```
-<br>
+
 
 ### Expanding Tile
 - Purpose:
@@ -172,7 +171,7 @@ Note: You can import styles directly to main css if your project css file is pro
         <p>This is the content of Section 2.</p>
     </nv-expand-tile>
     ```
-    <br>
+    
 ### Loading bar
 - Purpose:
     The nv-loading-bar component is used to display a loading bar, which can be either indeterminate (animated) or determinate (showing progress). It provides flexibility in customizing the appearance of the loading bar.
@@ -192,7 +191,7 @@ Note: You can import styles directly to main css if your project css file is pro
     ```
     <nv-loading-bar mode="determinate" :value="50" :denominator="100" height="0.3rem" color="#0077cc" background="#add8e6" />
     ```
-<br>
+
 
 ### Modal Panel
 - Purpose:
@@ -231,7 +230,7 @@ Note: You can import styles directly to main css if your project css file is pro
         </template>
     </nv-modal-panel>
     ```
-    <br>
+    
 
 ### Notice box
 - Purpose:
@@ -256,17 +255,16 @@ Note: You can import styles directly to main css if your project css file is pro
     <nv-notice-message value="Important information!" level="info" :closable="true" bubble />
 
     ```
-<br>
+
 
 ### Examples
 Run the library as normal vue project and you can find the components default usage
 
-```npm run serve```<br><br>
+```npm run serve```
 
 
 ### Icons 
 Box Icons : Premium web friendly icons for free - https://boxicons.com/
-<br><br>
 
 ### Custom css classes
 Box Shadows
