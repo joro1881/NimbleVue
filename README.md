@@ -17,7 +17,6 @@ styling classes in order to use the library in small startup project.
 
 - [nimble-vue-components](#nimble-vue-components)
   - [Project setup](#project-setup)
-  - [Initial lib documentation](#initial-lib-documentation)
   - [Components](#components)
     - [Button](#button)
     - [Rich Tech Editor](#rich-tech-editor)
