@@ -13,6 +13,22 @@ The inspiration came from a bad experience with one of the famous vue library, w
 styling classes in order to use the library in small startup project. 
 <br><br>
 
+## Table of Contents
+
+- [nimble-vue-components](#nimble-vue-components)
+  - [Project setup](#project-setup)
+  - [Initial lib documentation](#initial-lib-documentation)
+  - [Components](#components)
+    - [Button](#button)
+    - [Rich Tech Editor](#rich-tech-editor)
+    - [Expanding Tile](#expanding-tile)
+    - [Loading bar](#loading-bar)
+    - [Modal Panel](#modal-panel)
+    - [Notice box](#notice-box)
+  - [Examples](#examples)
+  - [Icons](#icons)
+  - [Custom css classes](#custom-css-classes)
+
 ### Project setup
 Install
 
