@@ -11,7 +11,7 @@ header, content and bar.
         >
             <span v-if="!noIcon" @click="onIconClick" id="icon" class="mr-2 ml-0.5 cursor-pointer flex items-center">
                 <box-icon v-if="!body" :name="expandIcon" :size="iconSize" :color="iconColor" />
-<box-icon v-else :name="collapseIcon" :size="iconSize" :color="iconColor" />
+                <box-icon v-else :name="collapseIcon" :size="iconSize" :color="iconColor" />
 
             </span>
             <div :class="headerStyle" @click="onTileClick">

@@ -52,11 +52,11 @@ input:focus{
     height: 90%;
 }
 
-.h-15\/16 {
+.nv-h-15\/16 {
     height: 96%;
 }
 
-.max-h-152 {
+.nv-max-h-152 {
     max-height: 40rem;
 }
 
