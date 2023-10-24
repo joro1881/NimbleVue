@@ -21,6 +21,7 @@
     :target="target"
     :title="tooltip"
     @click="handleClick"
+    @blur="blur"
     @mouseenter="hovered = hover && true"
     @mouseleave="hovered = false"
   >
